@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" type="text/css" href="HealthpageDesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Domine:wght@500&display=swap" rel="stylesheet">
+    <title>TravelNebraska.com/HelpPage</title>
+</head>
+<header>
+  <h1 id ="title">Travel Nebraska</h1>
+  <h2>Find the best destination with a few clicks!</h2><hr>
+</header>
+<body>
+  <div class="div2">
+    <h1>Frequently Asked Questions</h1>
+<button type="button" class="collapsible"><label>Why won't it recongnize my answers?</label></button>
+<div class="content">
+  <p>Our apologies you are having a hard time having your requests understanded. Please type exactly what the options say. For example when looking at the city one of the options is 'Omaha' so please type in a captial O followed by m a h a. The little punctuation is used for showing which words are the options.</p>
+</div>
+<button type="button" class="collapsible"><label>What is the point of this website I found?</label></button>
+<div class="content">
+  <p>Well welcome to our travel website. We were hired by Nebraska to develope a program that suggests attractions to potential visitors.</p>
+</div>
+<button type="button" class="collapsible"><label>Who created this page?</label></button>
+<div class="content">
+  <p>This website was created by Matt Uehling with help from Ben Kubicek and Isaac Workmen.</p>
+</div>
+<button type="button" class="collapsible"><label>How do I exit this page?</label></button>
+<div class="content">
+  <p>It pains us that you would want to leave this page, but simply pressing the 'x' button on the tab or the 'x' in the top right corner.</p>
+</div>
+<button type="button" class="collapsible"><label>Are you google?</label></button>
+<div class="content">
+  <p>Maybe one day we might get bought by Google but we are not Google. Google is a search engine we are a free tourist attraction website.</p>
+</div>
+<button type="button" class="collapsible"><label>What is the programmers favorite location?</label></button>
+<div class="content">
+  <p>Matts personal favorite is obviously the Lester F. Larsen Tractor Test and Power Museum, Bens favorite is the carhenge, Isaac prefers relaxing at the scenic driving tour of the sandhills.</p>
+</div>
+<button type="button" class="collapsible"><label>How difficult was it to create this project?</label></button>
+<div class="content">
+  <p>The project itself isn't too difficult, just took a lot of time to type everything out and then fix it multiple times.</p>
+</div>
+<button type="button" class="collapsible"><label>What is the type of locations are on the magical list?</label></button>
+<div class="content">
+  <p>There are 53 locations currently on the list, but currently restraunts are not on our list it consists of tourist attractions including a water park a few zoos, some nature locations and a lot of museums.</p>
+</div>
+</div>
+<footer>
+    <label><button type="button" onclick="window.location.href = 'homepage.html';" id="helpingHand">Help Page</button></label>
+ </footer>
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+</html>

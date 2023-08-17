@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" type="text/css" href="Design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Domine:wght@500&display=swap" rel="stylesheet">
+    <title>TravelNebraska.com</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="Help Page.html">Help</a>
+            <a href="Contact.html">Contact</a>
+            <input type="text" placeholder="Search..">
+          </div>
+        <header>
+            <h1 id ="title">Travel Nebraska</h1>
+            <h2>Find the best destination with a few clicks!</h2><hr>
+        </header>
+        <div class="div2"> 
+            <h2 id="attsTitle">Attributes</h2>
+            <br>
+            <form>
+                    <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value="Omaha">Omaha</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="Fremont">Fremont</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+                    <label for="location">Inside or Outside:</label>
+                <select name="location" id="location">
+                    <option value="Inside">Inside</option>
+                    <option value="Outside">Outside</option>
+                </select><br><br>
+                <label for="priceRange">Price Range Per Person:</label>
+            <select name="priceRange" id="priceRange">
+                '0-5', '6-10', '10-20', '20+', 'Any'
+                <option value="0-5">'0-5'</option>
+                <option value="6-10">'6-10'</option>
+                <option value="10-20">'10-20'</option>
+                <option value="20+">'20+'</option>
+                <option value="Any">'Any'</option>
+            </select>
+            <br><br>
+
+            <label for="handicap">Handicap Accessibility Required:</label>
+            <select name="handicap" id="handicap">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+                
+            </select>
+            <br><br>
+
+            <label for="transportation">Public Transportation Neccesary:</label>
+            <select name="transportation" id="transportation">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            <br><br>
+
+            <label for="physcialActivity">Prefer Physical Activity:</label>
+            <select name="physcialActivity" id="physcialActivity">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            <br><br>
+
+            <label for="rating">Lowest Preferred Rating?:</label>
+            <select name="rating" id="rating">
+                <option value=4>4 Stars</option>
+                <option value=4.1>4.1 Stars</option>
+                <option value=4.2>4.2 Stars</option>
+                <option value=4.3>4.3 Stars</option>
+                <option value=4.4>4.4 Stars</option>
+                <option value=4.5>4.5 Stars</option>
+                <option value=4.6>4.6 Stars</option>
+                <option value=4.7>4.7 Stars</option>
+                <option value=4.8>4.8 Stars</option>
+                <option value=4.9>4.9 Stars</option>
+                <option value=5>5 Stars</option>
+            </select>
+            <br><br>
+
+            <label for="programmers"> Request the Programmers Opinion?:</label>
+            <select name="programmers" id="programmers">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <br>
+            </form>
+              <label><button type="button" onclick="myFunction()" id="deButton">Search</button></label>
+            <script src = "script.js"></script>
+            
+        </div>
+        <!--<div class = "div3">
+            <h1>Atributes Selected</h1>
+            <p id ="demo0"></p>
+            <p id ="demo1"></p>
+            <p id ="demo2"></p>
+            <p id ="demo3"></p>
+            <p id ="demo4"></p>
+            <p id ="demo5"></p>
+            <p id ="demo6"></p>
+            <p id ="demo7"></p>
+        </div> -->
+        <div class = "div3">
+            <h3>Best locations for you:</h3>
+            <h4 id= "backup"><b></b></h4>
+            <h4 id = "backup2"><b></b></h4>
+            <h5 class = "options"></h5>
+            <h5 id="one" span class = "results"></h5>
+            <h5 id="two" span class = "results"></h5>
+            <h5 id="three" span class = "results"></h5>
+            <h5 id="four" span class = "results"></h5>
+            <h5 id="five" span class = "results"></h5>
+            <h5 id="six" span class = "results"></h5>
+            <h5 id="seven" span class = "results"></h5>
+            <h5 id="eight" span class = "results"></h5>
+            <h5 id="nine" span class = "results"></h5>
+            <h5 id="ten" span class = "results"></h5>
+            <h5 id="eleven" span class = "results"></h5>
+            <h5 id="twelve" span class = "results"></h5>
+            <h5 id="thirteen"span class = "results"></h5>
+            <h5 id="fourteen"span class = "results"></h5>
+            
+        </div>
+        <div class = "div4">
+      
+        </div>
+       
+        
+</body>
+<footer>
+    <button type="button" onclick="window.location.href = 'Help Page.html';" id="helpingHand"><label id="footerButton"></label>Help Page</label></button>
+    <h5><a id="footerLabel" href ="https://www.linkedin.com/in/matt-uehling-910102275/">Matt's linkedin</a></h5>
+ </footer>
